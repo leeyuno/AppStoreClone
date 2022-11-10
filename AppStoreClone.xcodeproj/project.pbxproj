@@ -14,6 +14,11 @@
 		4F51216E291CD5F500457BC1 /* AppStoreCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51216D291CD5F500457BC1 /* AppStoreCloneTests.swift */; };
 		4F512178291CD5F500457BC1 /* AppStoreCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F512177291CD5F500457BC1 /* AppStoreCloneUITests.swift */; };
 		4F51217A291CD5F500457BC1 /* AppStoreCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F512179291CD5F500457BC1 /* AppStoreCloneUITestsLaunchTests.swift */; };
+		4F51218B291CDA4700457BC1 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51218A291CDA4700457BC1 /* TodayView.swift */; };
+		4F512192291CDBA400457BC1 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F512191291CDBA400457BC1 /* GamesView.swift */; };
+		4F512194291CDBBC00457BC1 /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F512193291CDBBC00457BC1 /* AppsView.swift */; };
+		4F512196291CDBC300457BC1 /* ArcadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F512195291CDBC300457BC1 /* ArcadeView.swift */; };
+		4F512198291CDBD800457BC1 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F512197291CDBD800457BC1 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		4F512173291CD5F500457BC1 /* AppStoreCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppStoreCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F512177291CD5F500457BC1 /* AppStoreCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCloneUITests.swift; sourceTree = "<group>"; };
 		4F512179291CD5F500457BC1 /* AppStoreCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F51218A291CDA4700457BC1 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		4F512191291CDBA400457BC1 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		4F512193291CDBBC00457BC1 /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
+		4F512195291CDBC300457BC1 /* ArcadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeView.swift; sourceTree = "<group>"; };
+		4F512197291CDBD800457BC1 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +104,10 @@
 		4F51215B291CD5F200457BC1 /* AppStoreClone */ = {
 			isa = PBXGroup;
 			children = (
+				4F512188291CD60500457BC1 /* Resources */,
+				4F512187291CD5FE00457BC1 /* Models */,
+				4F512186291CD5FC00457BC1 /* Views */,
 				4F51215C291CD5F200457BC1 /* AppStoreCloneApp.swift */,
-				4F51215E291CD5F200457BC1 /* ContentView.swift */,
-				4F512160291CD5F500457BC1 /* Assets.xcassets */,
 				4F512162291CD5F500457BC1 /* Preview Content */,
 			);
 			path = AppStoreClone;
@@ -125,6 +136,74 @@
 				4F512179291CD5F500457BC1 /* AppStoreCloneUITestsLaunchTests.swift */,
 			);
 			path = AppStoreCloneUITests;
+			sourceTree = "<group>";
+		};
+		4F512186291CD5FC00457BC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4F51218F291CDA6800457BC1 /* Search */,
+				4F51218E291CDA6400457BC1 /* Arcade */,
+				4F51218D291CDA6100457BC1 /* Apps */,
+				4F51218C291CDA5800457BC1 /* Games */,
+				4F512189291CDA3D00457BC1 /* Today */,
+				4F51215E291CD5F200457BC1 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4F512187291CD5FE00457BC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4F512188291CD60500457BC1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F512160291CD5F500457BC1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F512189291CDA3D00457BC1 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				4F51218A291CDA4700457BC1 /* TodayView.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		4F51218C291CDA5800457BC1 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				4F512191291CDBA400457BC1 /* GamesView.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		4F51218D291CDA6100457BC1 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				4F512193291CDBBC00457BC1 /* AppsView.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		4F51218E291CDA6400457BC1 /* Arcade */ = {
+			isa = PBXGroup;
+			children = (
+				4F512195291CDBC300457BC1 /* ArcadeView.swift */,
+			);
+			path = Arcade;
+			sourceTree = "<group>";
+		};
+		4F51218F291CDA6800457BC1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4F512197291CDBD800457BC1 /* SearchView.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +337,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F51215F291CD5F200457BC1 /* ContentView.swift in Sources */,
+				4F51218B291CDA4700457BC1 /* TodayView.swift in Sources */,
+				4F512196291CDBC300457BC1 /* ArcadeView.swift in Sources */,
+				4F512198291CDBD800457BC1 /* SearchView.swift in Sources */,
+				4F512192291CDBA400457BC1 /* GamesView.swift in Sources */,
+				4F512194291CDBBC00457BC1 /* AppsView.swift in Sources */,
 				4F51215D291CD5F200457BC1 /* AppStoreCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
